@@ -12,6 +12,7 @@ Install requirements:
    - BCMath PHP Extension
    - Imagick PHP Extension
    - Curl PHP Extension
+   - GD PHP Extension
  - mysql 5.7
  - composer
  - nginx
@@ -27,9 +28,13 @@ Install requirements:
   - checkout d2l2 repo
   - run composer update
     - (php composer.phar update)
-  - add SQL credentials in .env
+  - set SQL settings and credentials as well as website url in .env
+  - install base theme
+    - (php artisan voyager:install)
   - set up initial Database
     - (php artisan migrate)
+  - set up admin
+    - (php artisan voyager:admin your@email.com --create)
   - restart nginx
   
   

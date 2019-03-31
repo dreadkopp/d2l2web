@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 /**
  *
@@ -29,7 +30,20 @@ class LanderController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(Request $request) {
-        return view('lander.index');
+        $user = Auth::User();
+        return view('lander.index',['User' => $user]);
+    }
+
+
+    /**
+     *
+     * @Get("/pfeffiman", as="lander.pfeffiman");
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function pfeffiman(Request $request) {
+        return view('pfeffiman.pfeffiman');
     }
 
 }

@@ -1,1 +1,0 @@
-<h2>Welcome to D2L2 website</h2>

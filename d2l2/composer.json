@@ -14,17 +14,22 @@
         "dread2": {
             "type": "git",
             "url": "https://github.com/dreadkopp/HTML_OutputOptimizer.git"
+        },
+        "hooks": {
+            "type": "composer",
+            "url": "https://larapack.io"
         }
     },
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "dreadkopp/html_outputoptimizer": "master@dev",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "laravelcollective/annotations": "dev-rt5.8",
         "predis/predis": "^1.1",
-        "dreadkopp/html_outputoptimizer": "master@dev"
+        "tcg/voyager": "^1.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
