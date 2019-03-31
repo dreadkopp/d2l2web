@@ -29,6 +29,7 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/annotations": "dev-rt5.8",
         "predis/predis": "^1.1",
+        "silviolleite/laravelpwa": "^1.0",
         "spatie/laravel-db-snapshots": "^1.1",
         "tcg/voyager": "^1.2"
     },

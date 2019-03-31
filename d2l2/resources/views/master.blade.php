@@ -2,6 +2,7 @@
 <html lang="{{ config('app.locale') }}" dir="{{ __('voyager::generic.is_rtl') == 'true' ? 'rtl' : 'ltr' }}">
 <head>
     <title>@yield('page_title', setting('admin.title') . " - " . setting('admin.description'))</title>
+    @laravelPWA
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
@@ -59,11 +60,16 @@
 </div>
 
 <?php
-if (starts_with(app('VoyagerAuth')->user()->avatar, 'http://') || starts_with(app('VoyagerAuth')->user()->avatar, 'https://')) {
-    $user_avatar = app('VoyagerAuth')->user()->avatar;
-} else {
-    $user_avatar = Voyager::image(app('VoyagerAuth')->user()->avatar);
-}
+
+        if (\Illuminate\Support\Facades\Auth::check()) {
+            if (starts_with(app('VoyagerAuth')->user()->avatar, 'http://') || starts_with(app('VoyagerAuth')->user()->avatar, 'https://')) {
+            $user_avatar = app('VoyagerAuth')->user()->avatar;
+            } else {
+            $user_avatar = Voyager::image(app('VoyagerAuth')->user()->avatar);
+            }
+        } else {
+            $user_avatar = '';
+        }
 ?>
 
 <div class="app-container">

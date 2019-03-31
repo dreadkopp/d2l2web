@@ -32,6 +32,7 @@
             </ol>
             @show
         </div>
+        @if(\Illuminate\Support\Facades\Auth::check())
         <ul class="nav navbar-nav @if (config('voyager.multilingual.rtl')) navbar-left @else navbar-right @endif">
             <li class="dropdown profile">
                 <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button"
@@ -74,5 +75,12 @@
                 </ul>
             </li>
         </ul>
+            @else
+            <ul class="nav navbar-nav @if (config('voyager.multilingual.rtl')) navbar-left @else navbar-right @endif">
+                <li class="dropdown profile">
+                    <a href="/login" class=" text-right" >LOGIN</a>
+                </li>
+            </ul>
+            @endif
     </div>
 </nav>
