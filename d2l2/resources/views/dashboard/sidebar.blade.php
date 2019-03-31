@@ -25,8 +25,8 @@
             </div>
 
         </div>
-        <div id="adminmenu">
-            <admin-menu :items="{{ menu('page', '_json') }}"></admin-menu>
+        <div id="clientmenu">
+            {{ menu('page','menu') }}
         </div>
     </nav>
 </div>

@@ -1,22 +1,20 @@
 @extends('master')
 
 @section('content')
-    <img src="banner/d2l2banner.jpeg" class="im-fluid d2l2-banner">
-    @if(Auth::check())
-        Moin {{ $User->name }}
-    @else
-        <a href="/login">Login</a>
-    @endif
+    <div class="container">
+        <img src="storage/{{ $page->image }}" style="width:100%; height: auto">
+
+        <h2>{{ $page->title }}</h2>
+    </div>
+
+    <section>
+        <div class="container">
+            {!!  $page->body !!}
+        </div>
+    </section>
 
 
-    <style>
-        .d2l2-banner {
-            background-blend-mode: darken;
-            height: 25rem;
-            background-color: #a531f6;
 
-        }
-    </style>
 
 
 @endsection

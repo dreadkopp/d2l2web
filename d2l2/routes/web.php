@@ -22,4 +22,14 @@ Route::group(['prefix' => 'admin'], function () {
 
 Auth::routes();
 
+Route::get('post/{slug}', function($slug){
+    $post = App\Post::where('slug', '=', $slug)->firstOrFail();
+    return view('posts.post', compact('post'));
+});
+
+Route::get('post/', function () {
+    $posts = App\Post::all();
+    return view('posts.all_posts', compact('posts'));
+});
+
 Route::get('/home', 'HomeController@index')->name('home');

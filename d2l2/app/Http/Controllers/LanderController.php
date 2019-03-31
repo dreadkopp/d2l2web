@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use TCG\Voyager\Models\Page;
 
 /**
  *
@@ -31,7 +32,8 @@ class LanderController extends Controller
      */
     public function index(Request $request) {
         $user = Auth::User();
-        return view('lander.index',['User' => $user]);
+        $page = Page::find(1);
+        return view('lander.index',['User' => $user, 'page' => $page ]);
     }
 
 

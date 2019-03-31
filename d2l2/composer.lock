@@ -1501,16 +1501,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.3",
+            "version": "v5.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d36d74acd3added5abbe7e7a84342b54bb0b0521"
+                "reference": "3f0a5744a866ae3ae0ca84f47080501714af01ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d36d74acd3added5abbe7e7a84342b54bb0b0521",
-                "reference": "d36d74acd3added5abbe7e7a84342b54bb0b0521",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3f0a5744a866ae3ae0ca84f47080501714af01ba",
+                "reference": "3f0a5744a866ae3ae0ca84f47080501714af01ba",
                 "shasum": ""
             },
             "require": {
@@ -1644,7 +1644,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-03-05T13:51:19+00:00"
+            "time": "2019-03-26T17:19:10+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1715,23 +1715,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dreadkopp/annotations.git",
-                "reference": "37c06118fa2891c6a656e5df55b2ecee6bf32d85"
+                "reference": "15552ac819d5a0423fb882a7f4603c6633e92940"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dreadkopp/annotations/zipball/37c06118fa2891c6a656e5df55b2ecee6bf32d85",
-                "reference": "37c06118fa2891c6a656e5df55b2ecee6bf32d85",
+                "url": "https://api.github.com/repos/dreadkopp/annotations/zipball/15552ac819d5a0423fb882a7f4603c6633e92940",
+                "reference": "15552ac819d5a0423fb882a7f4603c6633e92940",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "~1.6",
-                "illuminate/console": "5.8.3",
-                "illuminate/filesystem": "5.8.3",
-                "illuminate/support": "5.8.3",
+                "illuminate/console": "5.8.*",
+                "illuminate/filesystem": "5.8.*",
+                "illuminate/support": "5.8.*",
                 "php": ">=7.3"
             },
             "require-dev": {
-                "illuminate/database": "5.8.3",
+                "illuminate/database": "5.8.*",
                 "mockery/mockery": "0.9.11",
                 "phpunit/phpunit": "8.0.4"
             },
@@ -1761,9 +1761,9 @@
             ],
             "description": "Route Annotations for The Laravel Framework.",
             "support": {
-                "source": "https://github.com/dreadkopp/annotations/tree/master"
+                "source": "https://github.com/dreadkopp/annotations/tree/rt5.8"
             },
-            "time": "2019-03-08T11:55:32+00:00"
+            "time": "2019-03-31T18:45:58+00:00"
         },
         {
             "name": "league/flysystem",

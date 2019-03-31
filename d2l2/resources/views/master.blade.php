@@ -39,6 +39,7 @@
         }
     </style>
 
+
     @if(!empty(config('voyager.additional_css')))<!-- Additional CSS -->
         @foreach(config('voyager.additional_css') as $css)<link rel="stylesheet" type="text/css" href="{{ asset($css) }}">@endforeach
     @endif
@@ -134,12 +135,6 @@ if (starts_with(app('VoyagerAuth')->user()->avatar, 'http://') || starts_with(ap
     @endif
 </script>
 @include('voyager::media.manager')
-@include('voyager::menu.admin_menu')
-<script>
-new Vue({
-    el: '#adminmenu',
-});
-</script>
 @yield('javascript')
 @stack('javascript')
 @if(!empty(config('voyager.additional_js')))<!-- Additional Javascript -->
