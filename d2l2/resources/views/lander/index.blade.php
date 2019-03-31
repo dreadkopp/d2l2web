@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('master')
 
 @section('content')
-    <h2>Welcome to D2L2 website</h2>
+    <img src="banner/d2l2banner.jpeg" class="im-fluid d2l2-banner">
     @if(Auth::check())
         Moin {{ $User->name }}
     @else
@@ -9,5 +9,18 @@
     @endif
 
 
+    <style>
+        .d2l2-banner {
+            background-blend-mode: darken;
+            height: 25rem;
+            background-color: #a531f6;
+
+        }
+    </style>
+
+
+@endsection
+
+@section('breadcrumbs')
 
 @endsection
