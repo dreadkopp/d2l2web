@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bcc2450776aa6c84d55f4e2cb1964ca",
+    "content-hash": "f13a49070c51a83f59136163adf7d597",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -2726,6 +2726,216 @@
                 "phra"
             ],
             "time": "2015-10-13T18:44:15+00:00"
+        },
+        {
+            "name": "spatie/db-dumper",
+            "version": "2.13.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/db-dumper.git",
+                "reference": "c0eb0e16d73af665e23bf5b92d1ab2079ab8df91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/db-dumper/zipball/c0eb0e16d73af665e23bf5b92d1ab2079ab8df91",
+                "reference": "c0eb0e16d73af665e23bf5b92d1ab2079ab8df91",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "symfony/process": "^4.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\DbDumper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dump databases",
+            "homepage": "https://github.com/spatie/db-dumper",
+            "keywords": [
+                "database",
+                "db-dumper",
+                "dump",
+                "mysqldump",
+                "spatie"
+            ],
+            "time": "2019-03-03T10:52:00+00:00"
+        },
+        {
+            "name": "spatie/laravel-db-snapshots",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-db-snapshots.git",
+                "reference": "7b54b02fc10a3a60dae59d8b7ffa46a9692f6815"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-db-snapshots/zipball/7b54b02fc10a3a60dae59d8b7ffa46a9692f6815",
+                "reference": "7b54b02fc10a3a60dae59d8b7ffa46a9692f6815",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.4.30",
+                "league/flysystem": "^1.0.41",
+                "php": "^7.0",
+                "spatie/db-dumper": "^2.7",
+                "spatie/laravel-migrate-fresh": "^1.4.1",
+                "spatie/temporary-directory": "^1.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.8",
+                "orchestra/testbench": "^3.4.10",
+                "phpunit/phpunit": "^6.2 || ^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\DbSnapshots\\DbSnapshotsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\DbSnapshots\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Quickly dump and load databases",
+            "homepage": "https://github.com/spatie/laravel-db-snapshots",
+            "keywords": [
+                "laravel-db-snapshots",
+                "spatie"
+            ],
+            "time": "2018-05-03T15:08:53+00:00"
+        },
+        {
+            "name": "spatie/laravel-migrate-fresh",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-migrate-fresh.git",
+                "reference": "0949340fff1e34f8f004477a4f037598dd5e1352"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-migrate-fresh/zipball/0949340fff1e34f8f004477a4f037598dd5e1352",
+                "reference": "0949340fff1e34f8f004477a4f037598dd5e1352",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^5.3.28",
+                "illuminate/events": "^5.3.28",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^3.3",
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\MigrateFresh\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A command to build up the database from scratch",
+            "homepage": "https://github.com/spatie/laravel-migrate-fresh",
+            "keywords": [
+                "database",
+                "eloquent",
+                "fresh",
+                "laravel-migrate-fresh",
+                "migrate",
+                "spatie"
+            ],
+            "time": "2018-08-27T13:42:54+00:00"
+        },
+        {
+            "name": "spatie/temporary-directory",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/temporary-directory.git",
+                "reference": "5e1799fa2297363ebfb4df296fea90afbd4ef9b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/5e1799fa2297363ebfb4df296fea90afbd4ef9b7",
+                "reference": "5e1799fa2297363ebfb4df296fea90afbd4ef9b7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TemporaryDirectory\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily create, use and destroy temporary directories",
+            "homepage": "https://github.com/spatie/temporary-directory",
+            "keywords": [
+                "spatie",
+                "temporary-directory"
+            ],
+            "time": "2018-04-12T09:34:43+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

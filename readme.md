@@ -33,6 +33,9 @@ Install requirements:
     - (php artisan voyager:install)
   - set up initial Database
     - (php artisan migrate)
+  -load latest db snapshot
+    - php artisan snapshot:list
+    - php artisan snapshot:load <snapshot_name>  
   - set up admin
     - (php artisan voyager:admin your@email.com --create)
   - restart nginx
@@ -67,4 +70,23 @@ listen   80; ## listen for ipv4; this line is default and implied
                 deny all;
         }
 }
+```
+
+
+create DB snapshots:
+```
+php artisan snapshot:create <snapshot_name>
+```
+
+load DB snapshot
+
+```
+php artisan snapshot:load <snapshot_name>
+```
+
+
+show DB snapshots
+
+```
+php artisan snapshot:list
 ```
