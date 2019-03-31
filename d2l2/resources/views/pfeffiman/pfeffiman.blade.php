@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+    <div id="pfeffiman">
     <link rel="stylesheet" type="text/css" href="pm/css/pacman.css" />
     <link rel="stylesheet" type="text/css" href="pm/css/pacman-home.css" />
 
@@ -236,7 +239,7 @@
              src="/pm/img/pfeffi.jpg"
              width="300" height="227">
     </div>
-    J
+    </div>
 
 
 @endsection
